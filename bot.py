@@ -158,7 +158,6 @@ Send /help for all commands.
     ]
     await update.message.reply_text(text, parse_mode='Markdown', 
                                    reply_markup=InlineKeyboardMarkup(keyboard))
-    logger.info(f"User {user.id} started the bot")
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = """
