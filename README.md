@@ -1,34 +1,29 @@
 # @korede1bot
 
-A powerful Telegram bot with multiple tools including word counter, plagiarism checker, URL shortener, image converter, and image generator.
+Telegram Bot with Word Counter, Plagiarism Checker, URL Shortener, Image Converter, and Image Generator.
 
 ## Features
 
-### 📝 Word Counter
-- Count words, characters, sentences, and paragraphs
-- Shows unique words count
-- Command: `/wordcounter [text]`
+- 📝 Word Counter
+- 🔍 Plagiarism Checker
+- 🔗 URL Shortener
+- 🖼️ Image Converter
+- 🎨 Image Generator
 
-### 🔍 Plagiarism Checker
-- Checks text for potential plagiarism
-- Uses Google Search API (optional)
-- Built-in text analysis
-- Command: `/plagiarism [text]`
+## Commands
 
-### 🔗 URL Shortener
-- Shortens long URLs instantly
-- Uses is.gd and TinyURL APIs
-- Command: `/shorten [url]`
-
-### 🖼️ Image Converter
-- Convert images between formats
-- Supports PNG, JPG, WebP, BMP, GIF
-- Reply to image: `/convert [format]`
-
-### 🎨 Image Generator
-- Generate images from text descriptions
-- Powered by Pollinations.ai
-- Command: `/generate [prompt]`
+| Command | Description |
+|---------|-------------|
+| /start | Welcome message |
+| /help | Show all commands |
+| /wordcounter [text] | Count words & characters |
+| /plagiarism [text] | Check for plagiarism |
+| /shorten [url] | Shorten a URL |
+| /convert [format] | Convert image (reply to image) |
+| /generate [prompt] | Generate image from text |
+| /analyze [text] | Full text analysis |
+| /time | Current time |
+| /about | About this bot |
 
 ## Deployment
 
@@ -36,21 +31,9 @@ Deployed on Railway with GitHub integration.
 
 ## Environment Variables
 
-| Variable | Description |
-|----------|-------------|
-| TELEGRAM_BOT_TOKEN | Your bot token from @BotFather |
-| GOOGLE_API_KEY | (Optional) For plagiarism check |
-| GOOGLE_CSE_ID | (Optional) For plagiarism check |
-
-## Commands
-
-- `/start` - Welcome message
-- `/help` - Show all commands
-- `/wordcounter [text]` - Count words
-- `/plagiarism [text]` - Check plagiarism
-- `/shorten [url]` - Shorten URL
-- `/convert [format]` - Convert image
-- `/generate [prompt]` - Generate image
-- `/analyze [text]` - Full text analysis
-- `/time` - Current time
-- `/about` - About this bot
+| Variable | Required | Description |
+|----------|----------|-------------|
+| BOT_TOKEN | ✅ Yes | Your bot token from @BotFather |
+| TELEGRAM_BOT_TOKEN | ✅ Yes | Same as above (either works) |
+| GOOGLE_API_KEY | ❌ No | For better plagiarism check |
+| GOOGLE_CSE_ID | ❌ No | For better plagiarism check |
