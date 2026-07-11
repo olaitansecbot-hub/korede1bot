@@ -1,5 +1,5 @@
 """
-@korede1bot - Telegram Bot
+@korede1bot - Telegram Bot with All Tools
 Deployed on Railway with GitHub integration
 """
 
@@ -39,7 +39,7 @@ if not TOKEN:
     logger.error("Please set BOT_TOKEN or TELEGRAM_BOT_TOKEN in Railway variables.")
     sys.exit(1)
 
-logger.info(f"✅ Bot token found!")
+logger.info(f"✅ Bot token found! (length: {len(TOKEN)} characters)")
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 GOOGLE_CSE_ID = os.environ.get("GOOGLE_CSE_ID", "")
@@ -158,6 +158,7 @@ Send /help for all commands.
     ]
     await update.message.reply_text(text, parse_mode='Markdown', 
                                    reply_markup=InlineKeyboardMarkup(keyboard))
+    logger.info(f"User {user.id} started the bot")
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = """
