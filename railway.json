@@ -1,11 +1,5 @@
 {
-  "name": "korede1bot",
-  "version": "1.0.0",
-  "description": "Telegram bot with multiple tools",
-  "scripts": {
-    "start": "python -u bot.py"
-  },
-  "engines": {
-    "python": "3.11"
+  "build": {
+    "builder": "NIXPACKS"
   }
 }
